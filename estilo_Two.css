@@ -1,0 +1,71 @@
+
+body {
+    background-image: url('P_Two.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: "Poppins", sans-serif;
+}
+
+#contenedor {
+	text-align: center;
+	padding-top: 50px;
+}
+
+#titulo {
+	background-color: #5a5661;
+	color: white;
+	display: inline-block;
+	padding: 15px 40px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+section{
+	text-align: center;
+	padding-top: 50px;
+}
+
+#saludo {
+	background-color: #b4b1ab;
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 25px;
+	padding: 20px 40px;
+}
+
+#uno{
+	color: #403f49;
+	font-family: "Dancing Script", cursive;
+	font-size: 46px;
+}
+#dos{
+	color: #403f49;
+	font-family: "Times New Roman", sans-serif;
+	font-size: 29px;
+}
+
+#opciones{
+	font-size: 20px;
+	text-align: left;
+	background-color: #888888;
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 25px;
+	padding: 20px 40px;
+}
+div a{
+	color:black ;
+	text-decoration: underline;
+	margin: 10px;
+	text-decoration: none;
+	front-weight: bold;
+}
+
+#buton{
+	font-size: 15px;
+	background-color: #b4b1ab;
+	font-weight: bold;
+	border-color:#b4b1ab ;
+	border-radius: 20px;
+}

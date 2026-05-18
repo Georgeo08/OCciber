@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Receta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('fondo_receta.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 10px;
+            width: 100%;
+            background-color: #3d3737;
+            color: white;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #3d2a23;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Buscar Receta por Folio</h2>
+        <form action="newjsp.jsp" method="get">
+            <input type="number" name="folio" placeholder="Ingresa el folio del paciente" required><br>
+            <button class="btn" type="submit">Ver Receta</button>
+        </form>
+        <br>
+        <br>
+        <h2>Catalogo</h2>
+        <form action="catalogo.jsp">
+            <button class="btn">Ver catalogo</button>
+        </form>
+        <br><br><br>
+        <form action="carrito.jsp">
+            <button class="btn">Ver Carrito</button>
+        </form>
+        <br><br><br>
+        <form action="index.html">
+            <button class="btn">Regresar</button>
+        </form>
+        
+    </div>
+</body>
+</html>

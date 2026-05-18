@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            #fondo {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                object-position: center;
+                z-index: -1;
+            }
+            .boton{
+                width: 400px;
+                height: 300px;
+                display: block;
+                margin: 30px auto;
+                padding:400px 708px;
+            }
+        </style>
+        <script>
+           function inicio(){
+               window.location.href="ingreso.html";
+           }
+        </script>
+    </head>
+    <body>
+        <video autoplay muted id="fondo">
+            <source src="OP.mp4" type="video/mp4">
+        </video>
+        <div class="boton">
+            <input type="button" onclick="inicio()" value="INGRESAR">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .principal{
+                background-image: url('imagen.png');
+            }
+
+        </style>
+    </head>
+    <body class="principal" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
+
+        <h1 style="text-align: center;">Modificar Cita</h1>
+
+        <form name="cambios" method="post" action="ingC.jsp">
+            <div style="align-items: center;">
+                <h3>▸ Ingrese los datos de la cita</h3>
+                <br>
+                Día: <input type="text" name="dia">
+                <br><br>
+                Mes: <input type="text" name="mes">
+                <br><br>
+                Año: <input type="text" name="anio">
+                <br><br>
+                Hora: <input type="text" name="hora">
+                <br><br>
+                <input type="submit" name="cambios" value="Cambiar">
+            </div>
+        </form>
+
+        <br>
+        <a href="citaMenu.html">
+            <button type="button">Regresar</button>
+        </a>
+    </body>
+</html>

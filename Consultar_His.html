@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .principal{
+                background-image: url('imagen.png');
+            }
+        </style>
+    </head>
+    <body class ="principal" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
+        <h1 align="center">Consultar Historial</h1>
+        <form name="cancelar" method="post" action="verHist.jsp">
+             <input type="hidden" name="his" value="tres">
+            <div class ="cuadrito">
+                <br><br><br><br><!-- comment -->
+                <h3>▸Ingrese el folio del paciente </h3>
+                <br><br>
+                <input type="text" name="folio">
+                <br><br>
+                <input type="submit" name="cambios" value="Validar">
+                
+                <br><br><br><br>
+            </div>
+        </form>
+        <a href="histoMenu.html"><button>Regresar</button></a>
+    </body>
+</html>

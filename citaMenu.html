@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+		<title>Optometrista</title>
+		<link rel="stylesheet" href="estilo_Two.css">
+		<script>
+           function inicio(){
+               window.location.href="optoMenu.html";
+           }
+        </script>
+	</head>
+	<body>
+		<header>
+			<div id="contenedor">
+			<h1 id="titulo">OPTOMETRISTA</h1>
+			</div>
+		</header>
+		<section>
+			<div id="saludo">
+			<p id="uno">Registro de Citas</p>
+			</div>
+		<br><br><br>
+			<div id="opciones">
+			<ul>
+				<li> <a href="agendarCita.jsp">Agendar Cita</a> </li>
+                                <li> <a href="consultarCita.jsp">Consultar Cita</a> </li>
+                                <li> <a href="Cancelar_Citas.html">Cancelar Cita</a> </li>
+                                <li> <a href="Modificar_Citas.html">Modificar Cita</a> </li>
+			</ul>
+			</div>
+			<br><br><br>
+			<input type="button" onclick="inicio()" id="buton" value="REGRESAR" style= "width:150px; height:60px;">
+		</section>
+	</body>
+</html>

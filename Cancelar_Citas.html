@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelar Cita</title>
+    <style>
+        body.principal {
+            background-image: url('fon5.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        input[type="text"] {
+            text-align: center;
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+
+        input[type="submit"], button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        button {
+            background-color: #6c757d;
+        }
+
+        button:hover {
+            background-color: #5a6268;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="principal">
+    <h1>Cancelar Cita</h1>
+
+    <form name="cancelar" method="post" action="cancelarCita.jsp">
+        <div class="contenedor">
+            <h3>▸ Ingrese el folio de la cita</h3>
+            <input type="text" name="folio" required placeholder="Escriba el folio aquí">
+            <input type="submit" name="cancelar" value="Eliminar">
+        </div>
+    </form>
+
+    <!-- Botón de regresar fuera del formulario -->
+    <div style="text-align:center;">
+        <a href="citaMenu.html">
+            <button type="button">Regresar</button>
+        </a>
+    </div>
+</body>
+</html>

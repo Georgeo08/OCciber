@@ -1,0 +1,59 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Menú Principal</title>
+    <style>
+        body {
+            background-color: #99D9EA;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            color: #333;
+        }
+        a, form input[type="submit"] {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #f9c74f;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        a:hover, form input[type="submit"]:hover {
+            background-color: #f9844a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>MENÚ PRINCIPAL</h1>
+
+    <a href="Consultar_His.html">Consultar Historial</a>
+    <a href="Modificar_His.html">Modificar Historial</a>
+    <form action="verificarFolio.jsp" method="get" style="display:inline;">
+        <input type="submit" value="Añadir Historial" />
+    </form>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('msg') === 'guardado') {
+        const mensaje = document.createElement('div');
+        mensaje.innerText = "✅ Historial guardado exitosamente.";
+        mensaje.style.background = "#d4edda";
+        mensaje.style.color = "#155724";
+        mensaje.style.padding = "15px";
+        mensaje.style.margin = "20px auto";
+        mensaje.style.width = "80%";
+        mensaje.style.border = "1px solid #c3e6cb";
+        mensaje.style.borderRadius = "8px";
+        document.body.prepend(mensaje);
+    }
+    </script>
+    <a href="optoMenu.html">Regresar</a>
+</body>
+</html>

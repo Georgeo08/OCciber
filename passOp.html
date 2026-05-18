@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            #contraO {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                object-position: center;
+                z-index: -1;
+            }
+            .optometrista {
+                width: 100%;
+                height: 100%;
+                display: flex;  
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            .objContra {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+            #regresar {
+                margin-top: 20px;
+            }
+        </style>
+        <script>
+            function validaCon(){
+                var pass=document.getElementById("password");
+                var passN=parseInt(pass.value);
+                if(passN===9499154){
+                  alert("Contraseña valida");
+                  window.location.href="optoMenu.html";
+                }else{
+                    alert("Contraseña no Valida");
+                    alert("Ingrese numeros unicamente");
+                    document.getElementById("password").focus();
+                }
+            }
+            function apunta(){
+                document.getElementById("password").focus();
+            }
+            setTimeout(()=>{
+                document.getElementById("texto").hidden=false;
+            },2000);
+            setTimeout(()=>{
+                document.getElementById("password").hidden=false;
+            },2000);
+            setTimeout(()=>{
+                document.getElementById("btnValidar").hidden=false;
+            },2000);
+            setTimeout(()=>{
+                document.getElementById("regresar").hidden=false;
+            },2000);
+        </script>
+    </head>
+    <body onload="apunta()">
+        <video autoplay muted id="contraO">
+            <source src="passOp.mp4" type="video/mp4">
+        </video>
+        <div class="optometrista">
+            <div class="objContra">
+                <label id="texto" hidden><b>INGRESE SU CONTRASEÑA:</b></label>
+                <input type="text" name="passText" id="password" hidden>
+                <input type="button" name="passValida" id="btnValidar" value="VALIDAR" onclick="validaCon()" hidden>
+            </div>
+            <a href="ingreso.html" id="regresar" hidden><font color="green">REGRESAR</font></a>
+        </div>
+    </body>
+</html>

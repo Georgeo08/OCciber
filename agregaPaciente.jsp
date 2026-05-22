@@ -211,7 +211,7 @@
                     try {
                         Class.forName("com.mysql.cj.jdbc.Driver");
                         con = DriverManager.getConnection(
-                                "jdbc:mysql://localhost:3306/OptiClinic?useSSL=false&allowPublicKeyRetrieval=true",
+                                "jdbc:mysql://localhost:3306/opticlinic?useSSL=false&allowPublicKeyRetrieval=true",
                                 "root", "n0m3l0");
 
                         String sql = "INSERT INTO paciente (apellido_pt, apellido_pm, nombre, edad) VALUES (?, ?, ?, ?)";
